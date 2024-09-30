@@ -30,7 +30,11 @@
                                     <a href="{{ route('homepage') }}">
                                         HOME
                                     </a>
-
+                                </li>
+                                <li>
+                                    <a href="{{ route('comics.index') }}">
+                                        COMICS
+                                    </a>
                                 </li>
                             </ul>
                         </div>
