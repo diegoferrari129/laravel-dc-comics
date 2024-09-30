@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title', 50);
             $table->text('description')->nullable();
             $table->string('image');
-            $table->float('price', 5,3);
+            $table->integer('price');
             $table->year('sale_date');
             $table->string('type', 25);
             $table->timestamps();
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dc_comics');
+        Schema::dropIfExists('comics');
     }
 };
