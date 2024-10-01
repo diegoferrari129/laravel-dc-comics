@@ -16,7 +16,7 @@
                                     CHARACTERS
                                 </a>
                             </li>
-                            <li>
+                            <li class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">
                                 <a href="{{ route('comics.index') }}">
                                     COMICS
                                 </a>
