@@ -6,7 +6,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">edit</a>
+                    <button>
+                        <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">edit</a>
+                    </button>
+                    <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">
+                            delete
+                        </button>
+                    </form>
                 </div>
             </div>
             <div class="row">
