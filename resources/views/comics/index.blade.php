@@ -11,7 +11,7 @@
             <div class="row">
 
                 <div class="col-12">
-                    <div class="text-center pt-4 pb-2">
+                    <div class="text-end pt-4 pb-2 add_btn">
                         <button>
                             <a href="{{ route('comics.create') }}">
                                 Add Comic
@@ -45,7 +45,11 @@
                         </div>
                     </div>
                 @endforeach
-
+                <div class="comics_btn">
+                    <button>
+                        LOAD MORE
+                    </button>
+                </div>
             </div>
         </div>
 
